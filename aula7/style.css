@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+    border: 5px solid;
+    border-radius: 50%;
+}
+
+.camel {
+    border-color: green;
+}
+
+.cat {
+    border-color: yellow;
+}
+
+.horse {
+    border-color: red;
+}
+
+.ex1 {
+    justify-content: end;
+}
+
+.ex2 {
+    justify-content: center;
+}
+
+.ex3 {
+    justify-content: space-around;
+}
+
+.ex4 {
+    justify-content: space-between;
+}
+
+.ex5 {
+    align-items: end;
+}
+
+.ex6 {
+    justify-content: center;
+    align-items: center;
+}
+
+.ex7 {
+    justify-content: space-around;
+    align-items: end;
+}
+
+.ex8 {
+    flex-direction: row-reverse;
+}
+
+.ex9 {
+    flex-direction: column;
+}
+
+.ex10 {
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.ex11 {
+    flex-direction: column;
+    justify-content: end;
+}
+
+.ex12 {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.ex13 {
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: center;
+}
+
+#cat14 {
+    order: 1;
+}
+
+#horse15 {
+    order: -1;
+}
+
+.ex16 {
+    align-items: flex-start;
+}
+
+#cat16 {
+    align-self: end;
+}
+
+.ex17 {
+    align-items: flex-start;
+}
+
+#cat17 {
+    order: 2;
+    align-self: end;
+}
+
+.ex18 {
+    flex-wrap: wrap;
+}
+
+.ex19 {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ex20 {
+    flex-flow: column wrap;
+}
+
+.ex21 {
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.ex22 {
+    flex-wrap: wrap;
+    align-content: end;
+}
+
+.ex23 {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+.ex24 {
+    flex-flow: column-reverse wrap-reverse;
+    align-content: space-between;
+    justify-content: center;
+}
+
+
+
