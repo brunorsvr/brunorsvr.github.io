@@ -42,6 +42,21 @@ function cadastrarAnimal(event) {
   .catch(error => console.error('Erro:', error));
 }
 
+function cadastrarAnimalMockado() {
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      nome: 'Totó',
+      idade: 12,
+      raca: 'cachorro'
+    })
+  })
+  .then(response => response.json())
+  .then(() => carregarAnimais())
+  .catch(error => console.error('Erro:', error));
+}
+
 function removerAnimal(id) {
   fetch(`${apiUrl}/${id}`, {
     method: 'DELETE'
@@ -51,5 +66,6 @@ function removerAnimal(id) {
 }
 
 document.getElementById('animal-form').addEventListener('submit', cadastrarAnimal);
+document.getElementById('add-mock-animal').addEventListener('click', cadastrarAnimalMockado);
 
 carregarAnimais();
